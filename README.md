@@ -31,8 +31,9 @@ Setelah menyesuaikan kolom yang menjadi primary key dan foreign key pada setiap 
 
 ![alt text](https://github.com/ayodhyaGA/Analyzing-eCommerce-Business-Performance-with-SQL/blob/main/fig/ERD_eCommerce.PNG)
 Gambar 2. Entity Relationship Diagram (ERD)
-ANALISIS DATA
-Annual Customer Activity Growth
+
+## ANALISIS DATA
+### Annual Customer Activity Growth
 1.	Menampilkan rata-rata jumlah customer aktif bulanan (monthly active user/MAU) untuk setiap tahun.
 Dikarenakan tidak adanya kolom tahun, kita dapat membuat kolom tahun dengan mengambil bagian tahun saja menggunakan fungsi DATE_PART pada kolom order_purchase_timestamp yang memiliki format data timestamp without time zone dan terdiri dari pukul, tanggal, bulan, dan tahun. Setelah itu menghitung jumlah unik customer_unique_id menggunakan fungsi COUNT DISTINCT dan menghitung rata-rata jumlah pelanggan menggunakan fungsi AVG sehingga menghasilkan tampilan berikut ini.
 
@@ -68,7 +69,7 @@ Insight/Interpretasi:
 ●	Rata-rata jumlah order yang dilakukan customer untuk masing-masing tahun tidak terlalu mengalami perubahan dari tahun ke tahun yaitu rata-rata per customer hanya melakukan 1 kali pemesanan. 
 
 
-Annual Product Category Quality Analysis
+### Annual Product Category Quality Analysis
 1.	Membuat tabel yang berisi informasi pendapatan/revenue perusahaan total untuk masing-masing tahun.
 Revenue merupakan harga barang dan juga biaya kirim, untuk itu perlu menambahkan kolom price dan freight_value. Selain itu juga memastikan bahwa order_status adalah delivered dengan cara filtering menggunakan fungsi WHERE. Untuk membuat tabel sendiri menggunakan fungsi CREATE TABLE dan nama tabelnya yaitu “revenue_year”. Sehingga menghasilkan tabel berikut. 
 
@@ -103,7 +104,7 @@ Insight/Interpretasi:
 ●	Seperti halnya pendapatan, total pemesanan yang dibatalkan juga semakin bertambah dari tahun ke tahun.
 ●	Seperti halnya pendapatan, jumlah pesanan yang dibatalkan juga mengalami perubahan setiap tahunnya dan kategori Health Beauty juga menjadi kategori yang pesanannya banyak dibatalkan. Kemungkinan hal ini dikarenakan kategori Health Beauty menjadi produk yang paling banyak dikeluarkan namun analisis lebih lanjut diperlukan. 
 
-Annual Payment Type Usage Analysis
+### Annual Payment Type Usage Analysis
 1.	Tipe pembayaran terfavorit.
 Menampilkan jumlah penggunaan masing-masing tipe pembayaran secara all time diurutkan dari yang terfavorit. Kita dapat mengurutkan jumlah order berdasarkan payment_type dengan menggunakan fungsi ORDER BY yang diikuti setelah penggunaan fungsi ORDER BY. 
 
@@ -120,7 +121,7 @@ Visualisasi Annual Payment Type Usage Analysis
 
 Dari tahun ke tahun tipe pembayaran yang paling banyak digunakan adalah kartu kredit, sehingga perlu dilakukan analisis lebih lanjut bagaimana karakteristik pelanggan yang memakai kartu kredit misalkan kategori jenis produk yang diminati. Sedangkan pembayaran menggunakan kartu debit jarang digunakan pelanggan. 
 
-Kesimpulan 
+## Kesimpulan 
 Dari aspek pertumbuhan pelanggan atau Annual Customer Activity Growth dapat disimpulkan bawah pertumbuhan pelanggan baru terjadi pada tahun 2017 hal ini ditujukan oleh adannya peningkatan baik pada jumlag pelanggan baru dan jumlah Monthly Active User MAU. Di sisi lain terjadi sedikit penurunan terhadap jumlah pelanggan yang melakukan pembelian lebih dari satu kali pada tahun 2018. Rata-rata jumlah pesanan yang dilakukan hanya satu kali. Sedangkan dari aspek kualitas produk atau Annual Product Category Quality Analysis terjadi peningkatan total pendapatan perusahaan setiap tahunnya. Kategori produk yang mendapatkan pendapatan terbesar dan pemesanan yang paling banyak dibatalkan mengalami perubahan jenis setiap tahunnya. Kategori produk tersebut berasal dari Health Beauty. Selain itu tipe pembayaran yang paling banyak diminati dari tahun ke tahun adalah kartu kredit. 
 
 
