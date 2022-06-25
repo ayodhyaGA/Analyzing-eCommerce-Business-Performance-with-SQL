@@ -1,5 +1,8 @@
 # Analyzing-eCommerce-Business-Performance-with-SQL
 
+Sumber skema dan dataset berasal dari 
+<a href="https://www.rakamin.com/">Rakamin Academy</a>.
+
 ## LATAR BELAKANG.
 Dalam suatu perusahaan mengukur performa bisnis sangatlah penting untuk melacak, memantau, dan menilai keberhasilan atau kegagalan dari berbagai proses bisnis. Perusahaan ini merupakan salah satu marketplace terbesar di Amerika Selatan yang menghubungkan pelaku bisnis mikro dengan para pelanggannya.  Oleh karena itu, dalam paper ini akan menganalisa performa bisnis untuk sebuah perusahan eCommerce, dengan memperhitungkan beberapa metrik bisnis yaitu pertumbuhan pelanggan, kualitas produk, dan tipe pembayaran. Salah satu metrik yang digunakan untuk mengukur performa bisnis eCommerce adalah aktivitas customer yang berinteraksi di dalam platform eCommerce tersebut. Selain itu, performa bisnis eCommerce tentunya sangat berkaitan erat dengan produk-produk yang tersedia di dalamnya. Menganalisis kualitas dari produk dalam eCommerce dapat memberikan keputusan untuk mengembangkan bisnis dengan lebih baik. Lebih jauh lagi, bisnis eCommerce umumnya menyediakan sistem pembayaran berbasis open-payment yang memungkinkan customer untuk memilih berbagai macam tipe pembayaran yang tersedia. Menganalisis performa dari tipe pembayaran yang ada dapat memberikan insight untuk menciptakan strategic partnership dengan perusahaan penyedia jasa pembayaran dengan lebih baik.
 PERTANYAAN STUDI KASUS.
